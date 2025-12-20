@@ -1,0 +1,115 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.c9/
+.sublime-workspace
+.sublime-project
+*.sublime-workspace
+*.sublime-project
+
+# Node.js / JavaScript
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+yarn-debug.log.*
+.npm
+.eslintcache
+dist/
+build/
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Java / Gradle
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+target/
+.classpath
+.project
+.settings/
+
+# .NET / C#
+bin/
+obj/
+*.dll
+*.pdb
+*.user
+.vs/
+.vscode/
+
+# Ruby / Rails
+Gemfile.lock
+gems/
+tmp/
+log/
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.log
+.DS_Store
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# OS Specific
+.git/objects/
+.git/logs/
+
+# Project Specific (Optional - uncomment if needed)
+# new_file.texte    # If temporary
+# add/              # If archived content only
+
+# Cache Files
+.cache/
+*.cache
