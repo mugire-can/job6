@@ -1,144 +1,110 @@
-# Job6 Project
+# Python Jour 6 - Algorithmes
 
-A professional Git repository with comprehensive documentation and project structure.
+## 📚 Overview
 
-## 📋 Table of Contents
+Implementation of Python algorithms for Day 6 (Jour 6) programming exercises.
 
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Files Description](#files-description)
-- [Getting Started](#getting-started)
-- [Git Workflow](#git-workflow)
-- [Contributing](#contributing)
-- [Documentation](#documentation)
+This project contains solutions to algorithmic problems with clean, well-documented code.
 
-## 🎯 Overview
+## 🎯 Project Goals
 
-This project is a well-organized Git repository designed to demonstrate professional project management, version control practices, and documentation standards. It serves as a template for managing collaborative software projects with clear structure and documentation.
-
-**Key Features:**
-- ✅ Initialized Git repository with proper branching strategy
-- ✅ Comprehensive documentation (README, RAPPORT)
-- ✅ Clean project structure
-- ✅ Professional gitignore configuration
-- ✅ Multiple branches for organized development
+- Implement core algorithms (sorting, searching, data structures)
+- Write clean, efficient Python code
+- Include comprehensive tests
+- Demonstrate algorithmic thinking
 
 ## 📁 Project Structure
 
 ```
 job6/
-├── README.md              # This file - Project documentation
-├── RAPPORT.md             # Analysis report in French
-├── new_file.texte         # Placeholder text file
-├── add                    # Archive/reference directory
-└── .git/                  # Git version control directory
+├── README.md                  # This file
+├── .gitignore                # Git ignore rules
+├── algo.py                   # Main algorithm implementations
+├── test_algo.py             # Unit tests
+└── requirements.txt         # Python dependencies (if needed)
 ```
 
-## 📄 Files Description
+## 📄 Files
 
-| File | Purpose | Status |
-|------|---------|--------|
-| **README.md** | Main project documentation | ✅ Active |
-| **RAPPORT.md** | Detailed project analysis report (French) | ✅ Active |
-| **new_file.texte** | Placeholder for future content | ⚠️ Empty |
-| **add/** | Archive or reference materials | 📚 Legacy |
-| **.gitignore** | Git configuration for ignored files | ✅ Added |
+| File | Purpose |
+|------|---------|
+| **algo.py** | Core algorithm implementations |
+| **test_algo.py** | Test cases and validation |
+| **requirements.txt** | Python package dependencies |
+| **.gitignore** | Git ignore configuration |
+| **README.md** | Project documentation |
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-### Prerequisites
-- Git installed on your system
-- Basic understanding of Git commands
-
-### Clone the Repository
+### Clone Repository
 ```bash
-git clone https://github.com/yourusername/job6.git
+git clone https://github.com/mugire-can/job6.git
 cd job6
 ```
 
-### View Project Status
+### Run Code
 ```bash
-git status
-git log --oneline -n 10
+python algo.py
 ```
 
-## 🌳 Git Workflow
-
-### Current Branches
-- **main**: Production-ready branch
-- **Working-01**: Active development branch
-- **origin/main**: Remote repository main branch
-
-### Branch Strategy
-- `main`: Stable, production-ready code
-- `Working-01`: Feature development and testing
-- Feature branches: Created from `main` as needed
-
-### Common Workflow Commands
+### Run Tests
 ```bash
-# Switch to main branch
-git checkout main
-
-# Switch to working branch
-git checkout Working-01
-
-# Create new feature branch
-git checkout -b feature/your-feature-name
-
-# Pull latest changes
-git pull origin main
-
-# Push changes to remote
-git push origin Working-01
-
-# Merge development to main
-git checkout main
-git merge Working-01
+python -m pytest test_algo.py -v
+# or
+python test_algo.py
 ```
+
+## 💻 Requirements
+
+- Python 3.7+
+- No external dependencies (base implementation)
+
+## 🔍 Features
+
+- Efficient algorithm implementations
+- Clear, documented code
+- Unit tests for validation
+- Example usage
+
+## 📋 Algorithms Covered
+
+See `algo.py` for implementations of:
+- Sorting algorithms
+- Searching algorithms
+- Data structure operations
+- Problem-solving approaches
+
+## 🧪 Testing
+
+```bash
+# Run all tests
+python test_algo.py
+
+# Run with verbose output
+python -m pytest test_algo.py -v
+```
+
+## 📝 Code Style
+
+- PEP 8 compliant
+- Clear variable names
+- Docstrings for functions
+- Comments for complex logic
 
 ## 🤝 Contributing
 
-1. Always create a feature branch from `main`
-2. Make your changes with clear, descriptive commit messages
-3. Test before committing
-4. Submit changes to `Working-01` branch
-5. Request merge to `main` when ready
+1. Create a feature branch: `git checkout -b feature/algo-name`
+2. Implement and test: `python test_algo.py`
+3. Commit changes: `git commit -m "feat: Add algorithm"`
+4. Push to remote: `git push origin feature/algo-name`
 
-### Commit Message Guidelines
-```
-[TYPE] Brief description
+## 📖 Reference
 
-Detailed explanation of changes if needed.
-```
-
-**Types:** feat, fix, docs, style, refactor, test, chore
-
-## 📚 Documentation
-
-### Analysis Report
-See `RAPPORT.md` for detailed project analysis and observations in French.
-
-### Git Information
-- Repository status: Active
-- Total commits: 3+
-- Remote: GitHub repository
-- Last update: 2025-12-20
-
-### Environment
-- OS: Windows
-- Repository Location: `C:\Users\mugir\OneDrive\Desktop\job6`
-- Git Version: Modern (supports all features)
-
-## 📞 Support & Maintenance
-
-For issues or improvements:
-1. Check existing documentation
-2. Review git history: `git log --all --graph --oneline`
-3. Ensure proper branch synchronization
-4. Follow commit message standards
+- Project specifications: `Python Jour 6- Algo.pdf`
+- Python docs: https://docs.python.org/3/
 
 ---
 
-**Last Updated:** 2025-12-20  
-**Status:** Active & Maintained  
-**Version:** 1.0
+**Last Updated:** 2025-12-22  
+**Status:** In Development  
+**Branch:** development
