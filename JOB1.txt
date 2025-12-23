@@ -1,0 +1,65 @@
+================================================================================
+                              JOB 1
+================================================================================
+
+Title: Clone the Repository
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Clone the job6 repository from GitHub to your local machine.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Clone the main repository:
+────────────────────────────────────────────────────────────────────────────
+git clone https://github.com/mugire-can/job6.git
+cd job6
+
+Clone the development branch directly:
+────────────────────────────────────────────────────────────────────────────
+git clone -b development https://github.com/mugire-can/job6.git
+cd job6
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Downloads the entire repository from GitHub
+2. Creates a new 'job6' directory on your computer
+3. Copies all files from the remote repository
+4. Sets up Git tracking for the repository
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+Cloning into 'job6'...
+remote: Enumerating objects: ...
+remote: Counting objects: 100% ...
+Unpacking objects: 100% ...
+
+================================================================================
+VERIFICATION
+================================================================================
+
+After cloning, verify it worked:
+
+cd job6
+git status
+
+Expected: "On branch development" or "On branch main"
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB2.txt
+
+================================================================================

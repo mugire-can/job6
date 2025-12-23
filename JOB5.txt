@@ -1,0 +1,76 @@
+================================================================================
+                              JOB 5
+================================================================================
+
+Title: Switch Branches
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Switch between different branches to see the project at different points
+in its history.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Switch to main branch:
+────────────────────────────────────────────────────────────────────────────
+git checkout main
+
+Switch to development branch:
+────────────────────────────────────────────────────────────────────────────
+git checkout development
+
+Switch to Working-01 branch:
+────────────────────────────────────────────────────────────────────────────
+git checkout Working-01
+
+Create and switch to new branch:
+────────────────────────────────────────────────────────────────────────────
+git checkout -b feature/new-feature
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Moves you from one branch to another
+2. Updates your working directory to match the branch
+3. Changes which branch HEAD points to
+4. -b flag creates a new branch and switches to it
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+Switched to branch 'main'
+
+or
+
+Switched to branch 'development'
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+When you switch branches:
+  • Your local files update to match that branch
+  • Git log shows that branch's history
+  • git status shows "On branch [name]"
+
+Branches in this repository:
+  • main = Production/documentation
+  • development = Active development (current)
+  • Working-01 = Feature branch
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB6.txt
+
+================================================================================

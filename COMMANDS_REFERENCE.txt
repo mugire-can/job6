@@ -1,0 +1,672 @@
+================================================================================
+                    GIT & PYTHON PROJECT COMMANDS REFERENCE
+                         Python Jour 6 - Algorithmes
+                             Complete Job List
+================================================================================
+
+Date: 2025-12-22
+Repository: https://github.com/mugire-can/job6
+Branch: development
+Status: COMPLETE & READY
+
+
+================================================================================
+SECTION 1: GIT OPERATIONS - WHAT WAS DONE
+================================================================================
+
+1. CLONE THE REPOSITORY
+────────────────────────────────────────────────────────────────────────────
+git clone https://github.com/mugire-can/job6.git
+cd job6
+
+Alternative (clone development branch directly):
+git clone -b development https://github.com/mugire-can/job6.git
+
+
+2. CHECK GIT STATUS
+────────────────────────────────────────────────────────────────────────────
+git status
+git status -s  (short format)
+
+
+3. VIEW COMMIT HISTORY
+────────────────────────────────────────────────────────────────────────────
+git log
+git log --oneline
+git log --oneline -10  (last 10 commits)
+git log --graph --all --oneline --decorate
+
+
+4. CHECK BRANCHES
+────────────────────────────────────────────────────────────────────────────
+git branch
+git branch -a  (all branches including remote)
+git branch -vv  (with tracking info)
+
+
+5. SWITCH BRANCHES
+────────────────────────────────────────────────────────────────────────────
+git checkout main
+git checkout development
+git checkout -b feature/new-feature  (create new branch)
+
+
+6. FETCH FROM REMOTE
+────────────────────────────────────────────────────────────────────────────
+git fetch origin
+git fetch origin development
+git fetch origin main
+
+
+7. PULL FROM REMOTE
+────────────────────────────────────────────────────────────────────────────
+git pull origin development
+git pull origin main
+
+
+8. PUSH TO REMOTE
+────────────────────────────────────────────────────────────────────────────
+git push origin development
+git push origin main
+
+
+9. MERGE BRANCHES
+────────────────────────────────────────────────────────────────────────────
+git checkout main
+git merge development --no-ff -m "merge: Integrate development changes"
+git push origin main
+
+
+10. SYNCHRONIZE ALL
+────────────────────────────────────────────────────────────────────────────
+git fetch origin
+git pull origin development
+git pull origin main
+git branch -vv  (verify sync)
+
+
+================================================================================
+SECTION 2: PYTHON ALGORITHM COMMANDS
+================================================================================
+
+11. RUN ALL ALGORITHMS
+────────────────────────────────────────────────────────────────────────────
+python algo.py
+
+Expected Output:
+  Sorting results for all 3 algorithms
+  Search results for linear and binary
+  Mathematical calculations
+  String manipulations
+  Success message
+
+
+12. RUN ALL TESTS
+────────────────────────────────────────────────────────────────────────────
+python test_algo.py
+
+Expected Output:
+  19 tests run
+  19 passed
+  0 failures
+  0 errors
+
+
+13. RUN TESTS WITH VERBOSE OUTPUT
+────────────────────────────────────────────────────────────────────────────
+python -m pytest test_algo.py -v
+python -m unittest discover -v
+
+
+14. RUN SPECIFIC TEST CLASS
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestSortingAlgorithms -v
+python -m unittest test_algo.TestSearchAlgorithms -v
+python -m unittest test_algo.TestMathAlgorithms -v
+python -m unittest test_algo.TestStringAlgorithms -v
+python -m unittest test_algo.TestEdgeCases -v
+
+
+15. RUN SPECIFIC TEST
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestSortingAlgorithms.test_bubble_sort -v
+python -m unittest test_algo.TestMathAlgorithms.test_fibonacci -v
+
+
+================================================================================
+SECTION 3: PYTHON ALGORITHM USAGE IN CODE
+================================================================================
+
+16. IMPORT ALGORITHMS
+────────────────────────────────────────────────────────────────────────────
+from algo import bubble_sort, quick_sort, merge_sort
+from algo import linear_search, binary_search
+from algo import factorial, fibonacci, is_prime, gcd
+from algo import reverse_string, is_palindrome
+
+
+17. SORTING ALGORITHMS USAGE
+────────────────────────────────────────────────────────────────────────────
+array = [64, 34, 25, 12, 22, 11, 90]
+
+result = bubble_sort(array)
+result = quick_sort(array)
+result = merge_sort(array)
+
+print(result)  # [11, 12, 22, 25, 34, 64, 90]
+
+
+18. SEARCHING ALGORITHMS USAGE
+────────────────────────────────────────────────────────────────────────────
+array = [11, 12, 22, 25, 34, 64, 90]
+target = 25
+
+index = linear_search(array, target)
+index = binary_search(array, target)
+
+print(index)  # 3 (position in array)
+
+
+19. FACTORIAL CALCULATION
+────────────────────────────────────────────────────────────────────────────
+result = factorial(5)
+print(result)  # 120
+
+result = factorial(0)
+print(result)  # 1
+
+
+20. FIBONACCI SEQUENCE
+────────────────────────────────────────────────────────────────────────────
+result = fibonacci(6)
+print(result)  # 8
+
+result = fibonacci(10)
+print(result)  # 55
+
+
+21. PRIME NUMBER CHECK
+────────────────────────────────────────────────────────────────────────────
+is_prime(17)
+print(is_prime(17))   # True
+print(is_prime(10))   # False
+
+
+22. GCD CALCULATION
+────────────────────────────────────────────────────────────────────────────
+result = gcd(48, 18)
+print(result)  # 6
+
+
+23. STRING REVERSE
+────────────────────────────────────────────────────────────────────────────
+result = reverse_string("Hello")
+print(result)  # olleH
+
+
+24. PALINDROME CHECK
+────────────────────────────────────────────────────────────────────────────
+is_palindrome("A man a plan a canal Panama")
+print(is_palindrome("racecar"))  # True
+print(is_palindrome("hello"))    # False
+
+
+================================================================================
+SECTION 4: REPOSITORY SETUP COMMANDS
+================================================================================
+
+25. CONFIGURE GIT USER (FIRST TIME)
+────────────────────────────────────────────────────────────────────────────
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+
+
+26. VERIFY GIT CONFIGURATION
+────────────────────────────────────────────────────────────────────────────
+git config --list
+git config user.name
+git config user.email
+
+
+27. CHECK REMOTE URL
+────────────────────────────────────────────────────────────────────────────
+git remote -v
+git remote show origin
+
+
+28. ADD REMOTE (IF NEEDED)
+────────────────────────────────────────────────────────────────────────────
+git remote add origin https://github.com/mugire-can/job6.git
+
+
+29. CHANGE REMOTE URL (IF NEEDED)
+────────────────────────────────────────────────────────────────────────────
+git remote set-url origin https://github.com/mugire-can/job6.git
+
+
+================================================================================
+SECTION 5: CREATE NEW FILES & COMMIT
+================================================================================
+
+30. CREATE NEW FILE
+────────────────────────────────────────────────────────────────────────────
+echo "content" > newfile.txt
+type nul > newfile.txt  (empty file on Windows)
+
+
+31. ADD FILES TO STAGING
+────────────────────────────────────────────────────────────────────────────
+git add filename.py
+git add .  (add all changes)
+git add *.py  (add all Python files)
+
+
+32. COMMIT CHANGES
+────────────────────────────────────────────────────────────────────────────
+git commit -m "feat: Add new feature"
+git commit -m "fix: Fix bug"
+git commit -m "docs: Update documentation"
+git commit -m "test: Add unit tests"
+
+
+33. AMEND LAST COMMIT
+────────────────────────────────────────────────────────────────────────────
+git commit --amend -m "new message"
+git commit --amend --no-edit  (keep same message)
+
+
+================================================================================
+SECTION 6: BRANCH MANAGEMENT
+================================================================================
+
+34. CREATE NEW BRANCH
+────────────────────────────────────────────────────────────────────────────
+git branch feature/new-algo
+git checkout -b feature/new-algo  (create and switch)
+
+
+35. DELETE BRANCH
+────────────────────────────────────────────────────────────────────────────
+git branch -d feature/old-algo
+git branch -D feature/old-algo  (force delete)
+
+
+36. RENAME BRANCH
+────────────────────────────────────────────────────────────────────────────
+git branch -m old-name new-name
+
+
+37. TRACK REMOTE BRANCH
+────────────────────────────────────────────────────────────────────────────
+git checkout --track origin/feature-name
+git branch -u origin/development  (set upstream)
+
+
+================================================================================
+SECTION 7: UNDO CHANGES
+================================================================================
+
+38. DISCARD WORKING CHANGES
+────────────────────────────────────────────────────────────────────────────
+git restore filename.py
+git restore .  (restore all files)
+git checkout -- filename.py
+
+
+39. UNSTAGE FILES
+────────────────────────────────────────────────────────────────────────────
+git restore --staged filename.py
+git reset HEAD filename.py
+
+
+40. UNDO LAST COMMIT (KEEP CHANGES)
+────────────────────────────────────────────────────────────────────────────
+git reset --soft HEAD~1
+
+
+41. UNDO LAST COMMIT (DISCARD CHANGES)
+────────────────────────────────────────────────────────────────────────────
+git reset --hard HEAD~1
+
+
+42. VIEW WHAT WAS CHANGED
+────────────────────────────────────────────────────────────────────────────
+git diff
+git diff filename.py
+git diff HEAD~1 HEAD
+
+
+================================================================================
+SECTION 8: ADVANCED GIT COMMANDS
+================================================================================
+
+43. REBASE BRANCH
+────────────────────────────────────────────────────────────────────────────
+git rebase main
+git rebase --continue  (after resolving conflicts)
+git rebase --abort  (cancel rebase)
+
+
+44. CHERRY-PICK COMMIT
+────────────────────────────────────────────────────────────────────────────
+git cherry-pick commit-hash
+
+
+45. STASH CHANGES
+────────────────────────────────────────────────────────────────────────────
+git stash
+git stash list
+git stash pop
+git stash drop
+
+
+46. VIEW FILE AT SPECIFIC COMMIT
+────────────────────────────────────────────────────────────────────────────
+git show commit-hash:filename.py
+git show HEAD~1:algo.py
+
+
+47. SEARCH IN COMMITS
+────────────────────────────────────────────────────────────────────────────
+git log --grep="keyword"
+git log -S "search_term"
+
+
+================================================================================
+SECTION 9: CONFLICT RESOLUTION
+================================================================================
+
+48. CHECK FOR CONFLICTS
+────────────────────────────────────────────────────────────────────────────
+git status  (shows conflicted files)
+git diff  (shows conflicts)
+
+
+49. RESOLVE CONFLICTS
+────────────────────────────────────────────────────────────────────────────
+# 1. Edit files manually (remove <<< === >>>)
+# 2. Add resolved files
+git add filename.py
+
+# 3. Complete merge
+git commit -m "resolve: Merge conflicts"
+
+
+50. ABORT MERGE
+────────────────────────────────────────────────────────────────────────────
+git merge --abort
+git rebase --abort
+
+
+================================================================================
+SECTION 10: CLEANUP & MAINTENANCE
+================================================================================
+
+51. REMOVE UNTRACKED FILES
+────────────────────────────────────────────────────────────────────────────
+git clean -fd
+git clean -fd --dry-run  (preview what will be deleted)
+
+
+52. OPTIMIZE REPOSITORY
+────────────────────────────────────────────────────────────────────────────
+git gc
+git gc --aggressive
+
+
+53. VERIFY REPOSITORY
+────────────────────────────────────────────────────────────────────────────
+git fsck
+git fsck --full
+
+
+54. PRUNE OLD REFERENCES
+────────────────────────────────────────────────────────────────────────────
+git prune
+git reflog expire --all --expire=now
+git gc --aggressive --prune=now
+
+
+================================================================================
+SECTION 11: USEFUL ALIASES (OPTIONAL)
+================================================================================
+
+55. CREATE GIT ALIASES
+────────────────────────────────────────────────────────────────────────────
+git config --global alias.st status
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.unstage 'reset HEAD --'
+git config --global alias.last 'log -1 HEAD'
+git config --global alias.visual 'log --graph --oneline --all --decorate'
+
+
+56. USE ALIASES
+────────────────────────────────────────────────────────────────────────────
+git st          (instead of git status)
+git co main     (instead of git checkout main)
+git visual      (instead of git log --graph --oneline --all --decorate)
+
+
+================================================================================
+SECTION 12: PYTHON PROJECT STRUCTURE
+================================================================================
+
+Current Repository Structure:
+
+job6/
+├── .gitignore           (Git ignore rules)
+├── README.md            (Project documentation)
+├── algo.py              (11 Algorithm implementations)
+│   ├── Sorting: bubble_sort, quick_sort, merge_sort
+│   ├── Searching: linear_search, binary_search
+│   ├── Math: factorial, fibonacci, is_prime, gcd
+│   └── String: reverse_string, is_palindrome
+├── test_algo.py         (19 Unit tests)
+│   ├── TestSortingAlgorithms (4 tests)
+│   ├── TestSearchAlgorithms (4 tests)
+│   ├── TestMathAlgorithms (6 tests)
+│   ├── TestStringAlgorithms (2 tests)
+│   └── TestEdgeCases (3 tests)
+└── .git/                (Version control)
+
+
+================================================================================
+SECTION 13: COMPLETE WORKFLOW EXAMPLE
+================================================================================
+
+57. TYPICAL DEVELOPMENT WORKFLOW
+────────────────────────────────────────────────────────────────────────────
+
+# Step 1: Get latest code
+git fetch origin
+git pull origin development
+
+# Step 2: Create feature branch
+git checkout -b feature/new-algorithm
+
+# Step 3: Make changes
+# (Edit algo.py, test_algo.py)
+
+# Step 4: Run tests
+python test_algo.py
+
+# Step 5: Stage changes
+git add algo.py test_algo.py
+
+# Step 6: Commit
+git commit -m "feat: Add new algorithm"
+
+# Step 7: Push to remote
+git push origin feature/new-algorithm
+
+# Step 8: Switch to main branch
+git checkout development
+
+# Step 9: Merge feature branch
+git merge feature/new-algorithm --no-ff -m "merge: Add new algorithm"
+
+# Step 10: Push to remote
+git push origin development
+
+# Step 11: Delete feature branch
+git branch -d feature/new-algorithm
+git push origin --delete feature/new-algorithm
+
+
+================================================================================
+SECTION 14: DAILY COMMANDS CHEAT SHEET
+================================================================================
+
+58. QUICK DAILY COMMANDS
+────────────────────────────────────────────────────────────────────────────
+
+Check status:
+git status
+
+See recent commits:
+git log --oneline -5
+
+Update local repo:
+git pull origin development
+
+Make changes and commit:
+git add .
+git commit -m "your message"
+git push origin development
+
+Create and switch branch:
+git checkout -b feature/name
+
+Switch existing branch:
+git checkout development
+
+Merge branches:
+git checkout development
+git merge feature/name
+git push origin development
+
+View differences:
+git diff
+git diff main development
+
+
+================================================================================
+SECTION 15: PYTHON TESTING COMMANDS
+================================================================================
+
+59. TEST EXECUTION OPTIONS
+────────────────────────────────────────────────────────────────────────────
+
+Run all tests:
+python test_algo.py
+
+Run with unittest:
+python -m unittest test_algo
+
+Run with pytest (if installed):
+pip install pytest
+pytest test_algo.py -v
+
+Run specific test class:
+python -m unittest test_algo.TestMathAlgorithms -v
+
+Run specific test:
+python -m unittest test_algo.TestMathAlgorithms.test_factorial -v
+
+Generate coverage report:
+pip install coverage
+coverage run -m unittest test_algo.py
+coverage report
+coverage html  (generates HTML report)
+
+
+60. CHECK CODE QUALITY
+────────────────────────────────────────────────────────────────────────────
+
+Check style (PEP8):
+pip install flake8
+flake8 algo.py
+
+Check complexity:
+pip install pylint
+pylint algo.py
+
+Check type hints:
+pip install mypy
+mypy algo.py
+
+
+================================================================================
+SECTION 16: DOCUMENTATION COMMANDS
+================================================================================
+
+61. GENERATE DOCUMENTATION
+────────────────────────────────────────────────────────────────────────────
+
+Extract docstrings:
+pip install pdoc3
+pdoc3 algo.py
+
+Generate HTML docs:
+pdoc3 --html algo.py
+
+View in Python:
+python -c "import algo; help(algo.bubble_sort)"
+
+
+================================================================================
+SECTION 17: PERFORMANCE & OPTIMIZATION
+================================================================================
+
+62. MEASURE PERFORMANCE
+────────────────────────────────────────────────────────────────────────────
+
+# Create performance_test.py:
+import time
+from algo import bubble_sort, merge_sort
+
+array = list(range(1000, 0, -1))
+
+start = time.time()
+bubble_sort(array)
+print(f"Bubble Sort: {time.time() - start:.4f}s")
+
+start = time.time()
+merge_sort(array)
+print(f"Merge Sort: {time.time() - start:.4f}s")
+
+
+================================================================================
+SUMMARY OF OPERATIONS
+================================================================================
+
+✅ GIT OPERATIONS COMPLETED:
+   ✓ Committed (9+ commits)
+   ✓ Pushed (to GitHub)
+   ✓ Pulled (from remote)
+   ✓ Merged (branches)
+   ✓ Synchronized (100%)
+
+✅ PDF JOBS COMPLETED:
+   ✓ 11 Algorithms implemented
+   ✓ 19 Unit tests created
+   ✓ 100% Tests passing
+   ✓ Full documentation
+
+✅ REPOSITORY STATUS:
+   ✓ Clean and optimized
+   ✓ Production ready
+   ✓ On GitHub
+   ✓ Development branch active
+
+Repository: https://github.com/mugire-can/job6
+Branch: development
+Commit: b066dba
+Date: 2025-12-22
+
+
+================================================================================
+                              END OF COMMANDS REFERENCE
+================================================================================

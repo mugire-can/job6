@@ -1,0 +1,115 @@
+================================================================================
+                              JOB 11
+================================================================================
+
+Title: Run All Algorithms
+Category: Python Programming
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Run the main algorithm file to execute all implemented algorithms and see
+the output for sorting, searching, math, and string operations.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Run all algorithms:
+────────────────────────────────────────────────────────────────────────────
+python algo.py
+
+Run with Python 3 explicitly:
+────────────────────────────────────────────────────────────────────────────
+python3 algo.py
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Executes the algo.py script
+2. Runs all algorithm examples:
+   - Bubble Sort, Quick Sort, Merge Sort
+   - Linear Search, Binary Search
+   - Factorial, Fibonacci, Prime Check, GCD
+   - String Reverse, Palindrome Check
+3. Displays results for each algorithm
+4. Shows success message
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+============================================================
+Python Jour 6 - Algorithmes
+============================================================
+
+Original array: [64, 34, 25, 12, 22, 11, 90]
+Bubble Sort: [11, 12, 22, 25, 34, 64, 90]
+Quick Sort: [11, 12, 22, 25, 34, 64, 90]
+Merge Sort: [11, 12, 22, 25, 34, 64, 90]
+
+Linear Search for 25: 2
+Binary Search for 25: 3
+
+Number Algorithms:
+Factorial(5): 120
+Fibonacci(6): 8
+Is 17 prime?: True
+GCD(48, 18): 6
+
+String Algorithms:
+Reverse 'Hello': olleH
+Is 'A man a plan a canal Panama' palindrome?: True
+
+============================================================
+✅ All algorithms executed successfully!
+============================================================
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Each section shows:
+  • Test data
+  • Algorithm results
+  • Correctness verification
+  • Performance example
+
+All algorithms should complete without errors.
+
+================================================================================
+ALGORITHMS DEMONSTRATED
+================================================================================
+
+Sorting (3):
+  ✓ Bubble Sort - O(n²)
+  ✓ Quick Sort - O(n log n)
+  ✓ Merge Sort - O(n log n)
+
+Searching (2):
+  ✓ Linear Search - O(n)
+  ✓ Binary Search - O(log n)
+
+Math (4):
+  ✓ Factorial - O(n)
+  ✓ Fibonacci - O(n)
+  ✓ Prime Check - O(√n)
+  ✓ GCD - O(log n)
+
+String (2):
+  ✓ Reverse String - O(n)
+  ✓ Palindrome Check - O(n)
+
+TOTAL: 11 Algorithms
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB12.txt
+
+================================================================================

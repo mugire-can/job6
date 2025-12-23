@@ -1,0 +1,80 @@
+================================================================================
+                              JOB 8
+================================================================================
+
+Title: Push to Remote
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Push your local commits to the remote repository (GitHub) to share your
+changes with others.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Push current branch:
+────────────────────────────────────────────────────────────────────────────
+git push
+
+Push to specific remote and branch:
+────────────────────────────────────────────────────────────────────────────
+git push origin development
+git push origin main
+
+Push with upstream tracking:
+────────────────────────────────────────────────────────────────────────────
+git push -u origin development
+
+Push all branches:
+────────────────────────────────────────────────────────────────────────────
+git push --all
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Uploads your local commits to GitHub
+2. Updates the remote branch
+3. Makes your commits visible to others
+4. -u flag sets up tracking if new branch
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+Successful push:
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 4.75 KiB | 811.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-from 0 (from 0)
+To https://github.com/mugire-can/job6.git
+   f08422a..b0a1a84  development -> development
+
+If already up to date:
+Everything up-to-date
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+What it shows:
+  • "Enumerating objects" = Finding what to send
+  • "Compressing objects" = Making commits smaller
+  • "Writing objects" = Uploading to GitHub
+  • "f08422a..b0a1a84 development -> development" = What was pushed
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB9.txt
+
+================================================================================

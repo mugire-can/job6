@@ -1,0 +1,129 @@
+================================================================================
+                              JOB 13
+================================================================================
+
+Title: Import and Use Algorithms
+Category: Python Programming
+Difficulty: Medium
+Time Estimate: 5 minutes
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Learn how to import the algorithms into your own Python scripts and use them
+in your code.
+
+================================================================================
+COMMANDS / CODE
+================================================================================
+
+Create a test script (test_script.py):
+────────────────────────────────────────────────────────────────────────────
+
+# Import all algorithms
+from algo import (
+    bubble_sort, quick_sort, merge_sort,
+    linear_search, binary_search,
+    factorial, fibonacci, is_prime, gcd,
+    reverse_string, is_palindrome
+)
+
+# Use sorting algorithms
+array = [64, 34, 25, 12, 22, 11, 90]
+sorted_array = bubble_sort(array)
+print(f"Bubble Sort: {sorted_array}")
+
+# Use searching algorithms
+target = 25
+index = linear_search(array, target)
+print(f"Linear Search for {target}: {index}")
+
+# Use math algorithms
+print(f"Factorial(5): {factorial(5)}")
+print(f"Fibonacci(6): {fibonacci(6)}")
+print(f"Is 17 prime?: {is_prime(17)}")
+print(f"GCD(48, 18): {gcd(48, 18)}")
+
+# Use string algorithms
+print(f"Reverse 'Hello': {reverse_string('Hello')}")
+print(f"Is 'racecar' palindrome?: {is_palindrome('racecar')}")
+
+Then run:
+python test_script.py
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Imports algorithms from algo.py
+2. Creates test data
+3. Calls each algorithm with examples
+4. Prints results
+5. Shows algorithm usage patterns
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+Bubble Sort: [11, 12, 22, 25, 34, 64, 90]
+Linear Search for 25: 2
+Factorial(5): 120
+Fibonacci(6): 8
+Is 17 prime?: True
+GCD(48, 18): 6
+Reverse 'Hello': olleH
+Is 'racecar' palindrome?: True
+
+================================================================================
+ALGORITHM FUNCTIONS
+================================================================================
+
+Sorting:
+  bubble_sort(array) → Returns sorted array
+  quick_sort(array) → Returns sorted array
+  merge_sort(array) → Returns sorted array
+
+Searching:
+  linear_search(array, target) → Returns index or -1
+  binary_search(sorted_array, target) → Returns index or -1
+
+Math:
+  factorial(n) → Returns n!
+  fibonacci(n) → Returns nth Fibonacci number
+  is_prime(n) → Returns True/False
+  gcd(a, b) → Returns greatest common divisor
+
+String:
+  reverse_string(s) → Returns reversed string
+  is_palindrome(s) → Returns True/False
+
+================================================================================
+COMPLETE EXAMPLE
+================================================================================
+
+# Example 1: Sort and search
+numbers = [45, 23, 67, 12, 89, 34, 56]
+sorted_nums = merge_sort(numbers)
+index = binary_search(sorted_nums, 34)
+print(f"Found 34 at index {index}")
+
+# Example 2: Math operations
+num = 10
+print(f"{num}! = {factorial(num)}")
+print(f"F({num}) = {fibonacci(num)}")
+print(f"Is {num} prime? {is_prime(num)}")
+
+# Example 3: String operations
+text = "A man a plan a canal Panama"
+print(f"'{text}' is palindrome: {is_palindrome(text)}")
+reversed_text = reverse_string(text)
+print(f"Reversed: {reversed_text}")
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB14.txt
+
+================================================================================

@@ -1,0 +1,77 @@
+================================================================================
+                              JOB 7
+================================================================================
+
+Title: Pull from Remote
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Pull updates from the remote repository and merge them into your current
+branch. This combines fetch + merge.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Pull from current branch's remote:
+────────────────────────────────────────────────────────────────────────────
+git pull
+
+Pull from specific remote:
+────────────────────────────────────────────────────────────────────────────
+git pull origin development
+git pull origin main
+
+Pull with rebase (instead of merge):
+────────────────────────────────────────────────────────────────────────────
+git pull --rebase origin development
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Fetches updates from remote (GitHub)
+2. Merges remote commits into your local branch
+3. Updates your local files
+4. Creates a merge commit (if there are new commits)
+
+Equivalent to:
+  git fetch origin
+  git merge origin/development
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+If there are new commits:
+From https://github.com/mugire-can/job6
+   b0a1a84..f08422a  development -> origin/development
+Updating b0a1a84..f08422a
+Fast-forward
+ file.txt | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+If already up to date:
+Already up to date.
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Key terms:
+  • "Fast-forward" = Simple merge (no conflicts)
+  • "Updating b0a1a84..f08422a" = Commit range being merged
+  • "Already up to date" = No new commits to merge
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB8.txt
+
+================================================================================

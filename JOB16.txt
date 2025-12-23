@@ -1,0 +1,191 @@
+================================================================================
+                              JOB 16
+================================================================================
+
+Title: View Project Structure
+Category: Project Understanding
+Difficulty: Easy
+Time Estimate: 2 minutes
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Understand the complete structure of the project and what each file contains.
+
+================================================================================
+DIRECTORY STRUCTURE
+================================================================================
+
+job6/
+│
+├── .gitignore                     # Git configuration (70+ ignore rules)
+├── README.md                      # Project documentation
+├── algo.py                        # Main algorithm implementations (11 algos)
+├── test_algo.py                   # Unit tests (19 tests)
+├── COMMANDS_REFERENCE.txt         # Commands reference (62 jobs)
+├── JOB1.txt through JOB16.txt    # Individual job files
+│
+├── .git/                          # Git version control system
+│   ├── objects/                   # Stored commits and files
+│   ├── refs/                      # Branch references
+│   ├── HEAD                       # Current branch pointer
+│   └── config                     # Git configuration
+│
+└── __pycache__/                   # Python cache (auto-generated)
+    └── *.pyc                      # Compiled Python files
+
+================================================================================
+FILE DESCRIPTIONS
+================================================================================
+
+CORE PROJECT FILES:
+
+.gitignore (1.22 KB)
+  Purpose: Git configuration
+  Contains: 70+ patterns for files to ignore
+  Covers: OS, IDE, Node, Python, Java, .NET, Ruby, temp files
+
+README.md (2.40 KB)
+  Purpose: Project documentation
+  Contains: Overview, goals, structure, quick start, features
+  Includes: Algorithm list, testing guide, contributing guidelines
+
+algo.py (7.61 KB)
+  Purpose: Algorithm implementations
+  Contains: 11 complete algorithms with docstrings
+  Algorithms:
+    - Sorting: bubble_sort, quick_sort, merge_sort
+    - Searching: linear_search, binary_search
+    - Math: factorial, fibonacci, is_prime, gcd
+    - String: reverse_string, is_palindrome
+  Lines: 359 lines with examples
+
+test_algo.py (8.04 KB)
+  Purpose: Unit tests for algorithms
+  Contains: 19 comprehensive tests
+  Test Classes: 5 test classes
+  Coverage: All algorithms, edge cases, error handling
+  Lines: 227 lines of test code
+
+DOCUMENTATION FILES:
+
+COMMANDS_REFERENCE.txt (28.65 KB)
+  Purpose: Complete commands reference
+  Contains: 62 jobs organized in 17 sections
+  Includes: Git operations, Python commands, workflows, examples
+  Lines: 700+ lines
+
+JOB1.txt through JOB16.txt (Individual job files)
+  Purpose: Step-by-step task files
+  Each contains: Description, commands, expected output, next steps
+  Total: 16 job files
+
+GIT CONFIGURATION:
+
+.git/ directory
+  Purpose: Version control system
+  Contains: Complete commit history, branches, configuration
+  Objects: All commits, blobs, trees
+  Status: Active repository with remote tracking
+
+GENERATED:
+
+__pycache__/ directory
+  Purpose: Python bytecode cache
+  Contains: Compiled .pyc files
+  Action: Safe to ignore/delete (auto-regenerated)
+
+================================================================================
+FILE RELATIONSHIPS
+================================================================================
+
+algo.py
+  ├── Contains all algorithm implementations
+  ├── Used by: test_algo.py, JOB11.txt, JOB13.txt
+  └── Executed by: python algo.py
+
+test_algo.py
+  ├── Tests algo.py implementations
+  ├── Uses: unittest framework
+  └── Executed by: python test_algo.py, JOB12.txt, JOB14.txt, JOB15.txt
+
+README.md
+  ├── Documents the project
+  ├── References: algo.py, test_algo.py
+  └── Used by: Developers, GitHub
+
+.gitignore
+  ├── Configures Git behavior
+  ├── Ignores: 70+ file patterns
+  └── Used by: Git automatically
+
+COMMANDS_REFERENCE.txt
+  ├── Documents all commands
+  ├── References: All job files
+  └── Used by: Learning, reference
+
+JOB files
+  ├── Provide step-by-step instructions
+  ├── Reference: Other jobs, commands
+  └── Used by: Task execution
+
+================================================================================
+FILE STATISTICS
+================================================================================
+
+Total Files: 16+ documented files
+Total Size: ~50 KB of code and documentation
+Total Lines: ~1,500+ lines of code and docs
+
+Code Files: 2 (algo.py, test_algo.py)
+  - Lines: 586 lines
+  - Functions: 11 algorithms + 19 tests
+  - Complexity: Well-structured, documented
+
+Documentation: 4+ files
+  - README.md
+  - COMMANDS_REFERENCE.txt
+  - JOB files (1-16)
+
+Configuration: 1 file
+  - .gitignore
+
+================================================================================
+HOW TO NAVIGATE
+================================================================================
+
+Start here: README.md
+  - Get overview
+  - Understand project
+  - See quick start
+
+Learn algorithms: algo.py
+  - Read implementations
+  - Check docstrings
+  - Understand logic
+
+Verify quality: test_algo.py
+  - See test cases
+  - Understand coverage
+  - Run tests
+
+Reference: COMMANDS_REFERENCE.txt
+  - Find commands
+  - See examples
+  - Learn workflows
+
+Execute tasks: JOB files
+  - Follow step-by-step
+  - Execute commands
+  - Learn Git/Python
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, you have completed all 16 jobs!
+
+Now proceed to the FINAL RELEASE process described in JOB17.txt
+
+================================================================================
