@@ -1,0 +1,73 @@
+================================================================================
+                              JOB 6
+================================================================================
+
+Title: Fetch from Remote
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Fetch updates from the remote repository (GitHub) without merging them into
+your local branch.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Fetch from all remotes:
+────────────────────────────────────────────────────────────────────────────
+git fetch origin
+
+Fetch specific branch:
+────────────────────────────────────────────────────────────────────────────
+git fetch origin development
+git fetch origin main
+
+Fetch all remotes:
+────────────────────────────────────────────────────────────────────────────
+git fetch --all
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Connects to GitHub and downloads new commits
+2. Updates remote tracking branches (origin/main, origin/development)
+3. Does NOT change your local files
+4. Does NOT create merge commits
+5. Shows you what's new on the remote
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+remote: Enumerating objects: ...
+remote: Counting objects: 100% ...
+Unpacking objects: 100% ...
+From https://github.com/mugire-can/job6
+   b0a1a84..f08422a  development -> origin/development
+
+or
+
+Already up to date.  (if no new commits)
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+What it means:
+  • "Enumerating objects" = Finding what's on remote
+  • "Unpacking objects" = Downloading commits
+  • "development -> origin/development" = Updates received
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB7.txt
+
+================================================================================

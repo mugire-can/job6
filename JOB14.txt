@@ -1,0 +1,116 @@
+================================================================================
+                              JOB 14
+================================================================================
+
+Title: Run Specific Test Class
+Category: Python Programming
+Difficulty: Medium
+Time Estimate: 2 minutes
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Run tests for a specific algorithm category (sorting, searching, math, or
+string) instead of all tests.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Run sorting algorithm tests:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestSortingAlgorithms -v
+
+Run searching algorithm tests:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestSearchAlgorithms -v
+
+Run math algorithm tests:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestMathAlgorithms -v
+
+Run string algorithm tests:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestStringAlgorithms -v
+
+Run edge case tests:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestEdgeCases -v
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Runs tests for a specific algorithm category
+2. Shows individual test results
+3. Reports pass/fail for that category only
+4. Useful for debugging specific algorithms
+5. -v flag provides verbose output
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+For TestMathAlgorithms:
+
+test_factorial (__main__.TestMathAlgorithms.test_factorial) ... ok
+test_factorial_invalid (__main__.TestMathAlgorithms.test_factorial_invalid) ... ok
+test_fibonacci (__main__.TestMathAlgorithms.test_fibonacci) ... ok
+test_fibonacci_invalid (__main__.TestMathAlgorithms.test_fibonacci_invalid) ... ok
+test_gcd (__main__.TestMathAlgorithms.test_gcd) ... ok
+test_is_prime (__main__.TestMathAlgorithms.test_is_prime) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.010s
+
+OK
+
+================================================================================
+TEST CLASSES AVAILABLE
+================================================================================
+
+1. TestSortingAlgorithms (4 tests)
+   - bubble_sort, quick_sort, merge_sort
+   - Duplicates handling
+
+2. TestSearchAlgorithms (4 tests)
+   - linear_search found/not found
+   - binary_search found/not found
+
+3. TestMathAlgorithms (6 tests)
+   - factorial with valid/invalid input
+   - fibonacci with valid/invalid input
+   - is_prime checks
+   - gcd calculation
+
+4. TestStringAlgorithms (2 tests)
+   - reverse_string
+   - is_palindrome
+
+5. TestEdgeCases (3 tests)
+   - Empty arrays
+   - Single element
+   - Negative numbers
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Each line shows:
+  • Test name (test_fibonacci)
+  • Test class (__main__.TestMathAlgorithms)
+  • Result (ok = passed, FAIL = failed)
+
+The summary shows:
+  • Total tests run: 6
+  • Execution time: 0.010s
+  • Overall result: OK (all passed)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB15.txt
+
+================================================================================

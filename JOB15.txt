@@ -1,0 +1,121 @@
+================================================================================
+                              JOB 15
+================================================================================
+
+Title: Run Specific Test
+Category: Python Programming
+Difficulty: Medium
+Time Estimate: 2 minutes
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Run a single specific test to check if one particular algorithm or function
+works correctly.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Run a specific sorting test:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestSortingAlgorithms.test_bubble_sort -v
+
+Run a specific math test:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestMathAlgorithms.test_fibonacci -v
+
+Run factorial test:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestMathAlgorithms.test_factorial -v
+
+Run search test:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestSearchAlgorithms.test_linear_search_found -v
+
+Run string test:
+────────────────────────────────────────────────────────────────────────────
+python -m unittest test_algo.TestStringAlgorithms.test_is_palindrome -v
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Runs a single test method
+2. Shows detailed output for that test
+3. Useful for debugging
+4. Fast feedback on specific functionality
+5. Perfect for development
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+test_fibonacci (__main__.TestMathAlgorithms.test_fibonacci) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.001s
+
+OK
+
+================================================================================
+AVAILABLE SPECIFIC TESTS
+================================================================================
+
+Sorting Tests:
+  test_algo.TestSortingAlgorithms.test_bubble_sort
+  test_algo.TestSortingAlgorithms.test_quick_sort
+  test_algo.TestSortingAlgorithms.test_merge_sort
+  test_algo.TestSortingAlgorithms.test_duplicates
+
+Searching Tests:
+  test_algo.TestSearchAlgorithms.test_linear_search_found
+  test_algo.TestSearchAlgorithms.test_linear_search_not_found
+  test_algo.TestSearchAlgorithms.test_binary_search_found
+  test_algo.TestSearchAlgorithms.test_binary_search_not_found
+
+Math Tests:
+  test_algo.TestMathAlgorithms.test_factorial
+  test_algo.TestMathAlgorithms.test_factorial_invalid
+  test_algo.TestMathAlgorithms.test_fibonacci
+  test_algo.TestMathAlgorithms.test_fibonacci_invalid
+  test_algo.TestMathAlgorithms.test_is_prime
+  test_algo.TestMathAlgorithms.test_gcd
+
+String Tests:
+  test_algo.TestStringAlgorithms.test_reverse_string
+  test_algo.TestStringAlgorithms.test_is_palindrome
+
+Edge Case Tests:
+  test_algo.TestEdgeCases.test_empty_arrays
+  test_algo.TestEdgeCases.test_single_element
+  test_algo.TestEdgeCases.test_negative_numbers
+
+TOTAL: 19 tests available
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+If test passes:
+  test_fibonacci ... ok
+
+If test fails:
+  test_fibonacci ... FAIL
+  [Shows error details]
+
+If error occurs:
+  test_fibonacci ... ERROR
+  [Shows exception details]
+
+Execution time shows performance
+Time should be < 0.01s for these tests
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB16.txt
+
+================================================================================

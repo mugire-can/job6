@@ -1,0 +1,62 @@
+================================================================================
+                              JOB 2
+================================================================================
+
+Title: Check Git Status
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Check the current status of your Git repository to see what branch you're on
+and whether there are any uncommitted changes.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Check status (full output):
+────────────────────────────────────────────────────────────────────────────
+git status
+
+Check status (short format):
+────────────────────────────────────────────────────────────────────────────
+git status -s
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Shows which branch you're currently on
+2. Lists any uncommitted changes
+3. Shows untracked files
+4. Indicates if your branch is up to date with remote
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+On branch development
+Your branch is up to date with 'origin/development'.
+
+nothing to commit, working tree clean
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Key Information:
+  • "On branch development" = Current branch
+  • "up to date with 'origin/development'" = No new commits on remote
+  • "nothing to commit, working tree clean" = All changes are saved
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB3.txt
+
+================================================================================

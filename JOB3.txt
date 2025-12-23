@@ -1,0 +1,73 @@
+================================================================================
+                              JOB 3
+================================================================================
+
+Title: View Commit History
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 2 minutes
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+View the commit history of the repository to see all the changes that have
+been made and who made them.
+
+================================================================================
+COMMANDS
+================================================================================
+
+View full commit history:
+────────────────────────────────────────────────────────────────────────────
+git log
+
+View commit history (short format, last 10 commits):
+────────────────────────────────────────────────────────────────────────────
+git log --oneline -10
+
+View with graph visualization:
+────────────────────────────────────────────────────────────────────────────
+git log --graph --all --oneline --decorate
+
+View last commit only:
+────────────────────────────────────────────────────────────────────────────
+git log -1
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Shows commit history with timestamps
+2. Displays commit messages
+3. Shows author information
+4. With --oneline: condensed format
+5. With --graph: visual branch structure
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+b0a1a84 (HEAD -> development, origin/development) Merge branch 'development'
+f9a1a7a docs: Add comprehensive commands reference with 62 jobs
+f08422a Merge pull request #3 from mugire-can/main
+b066dba chore: Remove extra files - keep only essential project files
+58ce6e5 feat: Implement Python algorithms with tests and clean documentation
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Each line shows:
+  • Commit hash (first 7 characters)
+  • Branch pointers (HEAD, origin/development)
+  • Commit message
+  • Author (in full format)
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB4.txt
+
+================================================================================

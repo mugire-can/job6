@@ -1,0 +1,101 @@
+================================================================================
+                              JOB 9
+================================================================================
+
+Title: Merge Branches
+Category: Git Operations
+Difficulty: Medium
+Time Estimate: 2 minutes
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+Merge changes from one branch into another. This combines the history and
+code from two branches.
+
+================================================================================
+COMMANDS
+================================================================================
+
+Merge development into main:
+────────────────────────────────────────────────────────────────────────────
+git checkout main
+git merge development --no-ff -m "merge: Integrate development changes"
+git push origin main
+
+Merge with fast-forward (simple merge):
+────────────────────────────────────────────────────────────────────────────
+git merge development
+
+Merge with merge commit (recommended):
+────────────────────────────────────────────────────────────────────────────
+git merge development --no-ff -m "Your merge message"
+
+Abort merge if conflicts occur:
+────────────────────────────────────────────────────────────────────────────
+git merge --abort
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Takes commits from one branch
+2. Applies them to your current branch
+3. Creates a merge commit (with --no-ff)
+4. Updates your working directory
+
+--no-ff flag: Always creates merge commit for clarity
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+Successful merge:
+Merge made by the 'ort' strategy.
+ algo.py | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+Fast-forward merge:
+Fast-forward
+ algo.py | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+Already merged:
+Already up to date.
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Merge types:
+  • "Fast-forward" = Linear history (branch only had new commits)
+  • "Merge made by 'ort' strategy" = Three-way merge (created merge commit)
+  • "Already up to date" = No new commits to merge
+
+================================================================================
+STEPS IN DETAIL
+================================================================================
+
+1. Switch to target branch:
+   git checkout main
+
+2. Merge source branch:
+   git merge development --no-ff -m "merge: Integrate development"
+
+3. If conflicts:
+   - Edit conflicted files
+   - Remove <<< === >>> markers
+   - git add conflicted_files
+   - git commit -m "resolve: Merge conflicts"
+
+4. Push merged branch:
+   git push origin main
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB10.txt
+
+================================================================================

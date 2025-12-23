@@ -1,0 +1,71 @@
+================================================================================
+                              JOB 4
+================================================================================
+
+Title: Check Branches
+Category: Git Operations
+Difficulty: Easy
+Time Estimate: 1 minute
+
+================================================================================
+DESCRIPTION
+================================================================================
+
+View all available branches in the repository and see which branch you're
+currently on.
+
+================================================================================
+COMMANDS
+================================================================================
+
+View local branches:
+────────────────────────────────────────────────────────────────────────────
+git branch
+
+View all branches (local + remote):
+────────────────────────────────────────────────────────────────────────────
+git branch -a
+
+View branches with tracking information:
+────────────────────────────────────────────────────────────────────────────
+git branch -vv
+
+================================================================================
+WHAT THIS DOES
+================================================================================
+
+1. Shows all local branches
+2. Indicates which branch you're currently on (marked with *)
+3. With -a: shows remote branches too
+4. With -vv: shows tracking relationship with remote
+
+================================================================================
+EXPECTED OUTPUT
+================================================================================
+
+Local branches:
+  Working-01
+* development
+  main
+
+All branches with tracking:
+  Working-01          08ae85f docs: Add comprehensive TODO list
+* development         b0a1a84 [origin/development] Merge branch 'development'
+  main                0464934 [origin/main] docs: Add comprehensive control
+
+================================================================================
+UNDERSTANDING THE OUTPUT
+================================================================================
+
+Symbols:
+  • * = Current branch (where you are)
+  • [origin/development] = Tracked remote branch
+  • Hash and message = Latest commit on that branch
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+After completing this job, move to JOB5.txt
+
+================================================================================
