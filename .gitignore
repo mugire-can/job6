@@ -1,42 +1,8 @@
-# Operating System Files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-desktop.ini
+# ════════════════════════════════════════════════════════════════════════════
+# GIT IGNORE CONFIGURATION - Python Jour 6 Project
+# ════════════════════════════════════════════════════════════════════════════
 
-# IDE & Editor Files
-.vscode/
-.idea/
-*.swp
-*.swo
-*.swn
-*~
-.project
-.classpath
-.c9/
-.sublime-workspace
-.sublime-project
-*.sublime-workspace
-*.sublime-project
-
-# Node.js / JavaScript
-node_modules/
-npm-debug.log
-npm-debug.log.*
-yarn-error.log
-yarn-debug.log.*
-.npm
-.eslintcache
-dist/
-build/
-.next/
-out/
-
-# Python
+# PYTHON SPECIFIC FILES
 __pycache__/
 *.py[cod]
 *$py.class
@@ -60,17 +26,74 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Java / Gradle
+# VIRTUAL ENVIRONMENTS
+.env
+.venv
+env.bak/
+venv.bak/
+
+# IDE & EDITOR FILES
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*~
+.project
+.classpath
+.c9/
+.sublime-workspace
+.sublime-project
+*.sublime-workspace
+*.sublime-project
+*.iml
+*.sublime-settings
+.DS_Store
+
+# OPERATING SYSTEM FILES
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# NODE.JS / JAVASCRIPT
+node_modules/
+npm-debug.log
+npm-debug.log.*
+yarn-error.log
+yarn-debug.log.*
+.npm
+.eslintcache
+dist/
+out/
+
+# TEMPORARY & BACKUP FILES
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.log
+*.cache
+.cache/
+*.swp
+
+# JAVA / GRADLE
 *.class
 *.jar
 *.war
 *.ear
 .gradle/
-build/
 target/
-.classpath
-.project
 .settings/
 
 # .NET / C#
@@ -80,36 +103,27 @@ obj/
 *.pdb
 *.user
 .vs/
-.vscode/
 
-# Ruby / Rails
-Gemfile.lock
-gems/
-tmp/
-log/
+# TESTING & COVERAGE
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+.hypothesis/
 
-# Temporary Files
-*.tmp
-*.temp
-*.bak
-*.backup
-*.orig
-*.log
-.DS_Store
+# IDE TEMPORARY
+.mypy_cache/
+.dmypy.json
+dmypy.json
 
-# Environment Variables
-.env
-.env.local
-.env.*.local
-
-# OS Specific
+# PROJECT SPECIFIC
+archived/
 .git/objects/
 .git/logs/
+job6/
 
-# Project Specific (Optional - uncomment if needed)
-# new_file.texte    # If temporary
-# add/              # If archived content only
-
-# Cache Files
-.cache/
-*.cache
+# DOCUMENTATION BUILD
+docs/_build/
+site/
