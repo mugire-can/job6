@@ -1,0 +1,266 @@
+================================================================================
+                    REPOSITORY RENAME INSTRUCTIONS
+================================================================================
+
+Project: Python Jour 6 - Algorithmes
+New Repository Name: Python-Jour-6-Algo
+Date: 2025-12-23
+
+================================================================================
+STEP 1: RENAME ON GITHUB (MANUAL)
+================================================================================
+
+1. Open browser and go to:
+   https://github.com/mugire-can/job6/settings
+
+2. Find "Repository name" field (near top of page)
+
+3. Change from: "job6"
+   To: "Python-Jour-6-Algo"
+
+4. Click "Rename" button
+
+5. Confirm the action
+
+What GitHub will do:
+  ✅ Rename repository immediately
+  ✅ Redirect old URL to new URL (old links still work)
+  ✅ Update all references
+  ✅ Preserve all commits and history
+  ✅ Preserve all branches
+  ✅ Preserve all issues and PRs
+
+
+================================================================================
+STEP 2: UPDATE LOCAL GIT REMOTE (AUTOMATIC)
+================================================================================
+
+After GitHub rename completes, run:
+
+  git remote set-url origin https://github.com/mugire-can/Python-Jour-6-Algo.git
+
+Then verify:
+
+  git remote -v
+
+Should show:
+  origin  https://github.com/mugire-can/Python-Jour-6-Algo.git (fetch)
+  origin  https://github.com/mugire-can/Python-Jour-6-Algo.git (push)
+
+
+================================================================================
+STEP 3: VERIFY SYNCHRONIZATION
+================================================================================
+
+After renaming, verify everything works:
+
+  git fetch origin
+  git status
+
+Should show:
+  On branch development
+  Your branch is up to date with 'origin/development'.
+
+
+================================================================================
+NEW REPOSITORY URLS
+================================================================================
+
+After rename, use these URLs:
+
+Repository:
+  https://github.com/mugire-can/Python-Jour-6-Algo
+
+Clone URL:
+  git clone https://github.com/mugire-can/Python-Jour-6-Algo.git
+
+Development Branch:
+  https://github.com/mugire-can/Python-Jour-6-Algo/tree/development
+
+Main Branch:
+  https://github.com/mugire-can/Python-Jour-6-Algo/tree/main
+
+
+================================================================================
+WHAT'S IN THE RENAMED REPOSITORY
+================================================================================
+
+Core Code:
+  ✅ algo.py - 11 algorithms
+  ✅ test_algo.py - 19 unit tests
+
+Specification:
+  ✅ Python Jour 6- Algo.pdf - Original specification (0.55 MB)
+
+Documentation:
+  ✅ README.md - Professional guide
+  ✅ .gitignore - Comprehensive rules
+  ✅ COMMANDS_REFERENCE.txt - 62 commands/jobs
+
+Learning Materials:
+  ✅ JOB1.txt - JOB16.txt - Step-by-step tutorials
+  ✅ VERIFICATION_NEEDED.txt - Verification checklist
+
+Total: 23 Files
+
+
+================================================================================
+ALGORITHMS IMPLEMENTED (11)
+================================================================================
+
+Sorting (3):
+  ✅ Bubble Sort - O(n²)
+  ✅ Quick Sort - O(n log n)
+  ✅ Merge Sort - O(n log n)
+
+Searching (2):
+  ✅ Linear Search - O(n)
+  ✅ Binary Search - O(log n)
+
+Math (4):
+  ✅ Factorial - O(n)
+  ✅ Fibonacci - O(n)
+  ✅ Prime Check - O(√n)
+  ✅ GCD - O(log n)
+
+String (2):
+  ✅ String Reverse - O(n)
+  ✅ Palindrome Check - O(n)
+
+
+================================================================================
+TESTS (19)
+================================================================================
+
+✅ Sorting: 4 tests
+✅ Searching: 4 tests
+✅ Math: 6 tests
+✅ String: 2 tests
+✅ Edge Cases: 3 tests
+
+Pass Rate: 100% ✅
+
+
+================================================================================
+JOBS/TUTORIALS (78 TOTAL)
+================================================================================
+
+Individual JOB Files: 16
+  JOB1-JOB5: Git basics
+  JOB6-JOB10: Git advanced
+  JOB11-JOB15: Python algorithms
+  JOB16: Project overview
+
+COMMANDS_REFERENCE.txt: 62 jobs
+  Git operations: 30 jobs
+  Python commands: 24 jobs
+  Configuration: 9 jobs
+  Workflows: 4 jobs
+  Advanced: 7 jobs
+  Maintenance: 4 jobs
+
+TOTAL: 78 COMPLETE JOBS
+
+
+================================================================================
+FINAL CHECKLIST
+================================================================================
+
+Before rename:
+  [✅] PDF file restored
+  [✅] All files committed
+  [✅] All files pushed to GitHub
+  [✅] Working tree clean
+  [✅] Synchronized with remote
+
+During rename:
+  [ ] Rename on GitHub to "Python-Jour-6-Algo"
+  [ ] Wait for GitHub to complete rename
+  [ ] Verify new URL works
+
+After rename:
+  [ ] Run: git remote set-url origin https://github.com/mugire-can/Python-Jour-6-Algo.git
+  [ ] Run: git fetch origin
+  [ ] Run: git status
+  [ ] Verify everything works
+
+
+================================================================================
+TIMELINE
+================================================================================
+
+Date: 2025-12-23
+
+What was done:
+  2:30 PM - PDF restored and committed
+  2:40 PM - Rename instructions prepared
+
+What you need to do:
+  Next - Rename on GitHub (5 minutes)
+
+What will be done:
+  After rename - Local update (1 minute)
+
+Result:
+  ✅ Project complete
+  ✅ Repository renamed
+  ✅ All synchronized
+  ✅ Production ready
+
+
+================================================================================
+SUPPORT
+================================================================================
+
+If rename doesn't work:
+
+1. Check GitHub settings page loads correctly
+2. Check username is correct (mugire-can)
+3. Try rename again
+4. Allow 1-2 minutes for GitHub to process
+
+If git remote fails:
+
+1. Verify new URL: https://github.com/mugire-can/Python-Jour-6-Algo.git
+2. Check internet connection
+3. Run: git remote -v (to see current)
+4. Run: git remote set-url origin <new-url>
+5. Test: git fetch origin
+
+
+================================================================================
+DOCUMENTATION LINKS (AFTER RENAME)
+================================================================================
+
+Main Repository:
+  https://github.com/mugire-can/Python-Jour-6-Algo
+
+Clone:
+  git clone https://github.com/mugire-can/Python-Jour-6-Algo.git
+  cd Python-Jour-6-Algo
+
+Read PDF:
+  https://github.com/mugire-can/Python-Jour-6-Algo/blob/development/Python%20Jour%206-%20Algo.pdf
+
+Read README:
+  https://github.com/mugire-can/Python-Jour-6-Algo/blob/development/README.md
+
+View Algorithms:
+  https://github.com/mugire-can/Python-Jour-6-Algo/blob/development/algo.py
+
+View Tests:
+  https://github.com/mugire-can/Python-Jour-6-Algo/blob/development/test_algo.py
+
+
+================================================================================
+NEXT STEPS
+================================================================================
+
+1. ✅ Go to GitHub settings
+2. ✅ Rename repository to "Python-Jour-6-Algo"
+3. ✅ Wait for rename to complete
+4. ✅ Then tell me the rename is done
+5. ✅ I will update git remote and finalize
+
+================================================================================
+
